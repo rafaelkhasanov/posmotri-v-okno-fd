@@ -29,6 +29,7 @@ html {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -111,6 +112,7 @@ html {
   width: 100%;
   height: 100%;
   opacity: 0;
+  cursor: pointer;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -124,6 +126,12 @@ html {
 
 .search-form__label:has(.search-form__pseudo-checkbox::after:focus-visible) {
   outline: 1px solid #fff;
+}
+
+.search-form__submit-button {
+  width: 195px;
+  height: 35px;
+  align-self: flex-end;
 }
 
 .content__details {
@@ -144,13 +152,14 @@ html {
 }
 
 .content__list-container {
-  max-height: 534px;
-  max-width: 399px;
+  max-height: 535px;
+  max-width: 400px;
   overflow-y: auto;
   margin-top: 26px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
 }
 
 .content__list {
@@ -159,9 +168,35 @@ html {
   gap: 30px;
 }
 
+.content__list-item {
+  padding: 0 3px;
+}
 .content__card-link {
   text-decoration: none;
   color: #fff;
+  display: block;
+  cursor: pointer;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card {
@@ -195,6 +230,38 @@ html {
   height: 103px;
   object-fit: cover;
   object-position: center;
+}
+
+.button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+  font-family: "Fira Sans Condensed", sans-serif;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.more-button {
+  display: block;
 }
 
 h1,
