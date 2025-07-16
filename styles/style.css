@@ -145,6 +145,7 @@ html {
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 .content__accent {
@@ -152,8 +153,8 @@ html {
 }
 
 .content__list-container {
-  max-height: 535px;
-  max-width: 400px;
+  max-height: 298px;
+  max-width: 399px;
   overflow-y: auto;
   margin-top: 26px;
   display: flex;
@@ -207,6 +208,9 @@ html {
 .content__video-card-description-container {
   flex-grow: 1;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .content__video-card-title {
@@ -214,10 +218,15 @@ html {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 .content__video-card-description {
-  line-height: 16px;
+  line-height: 16.2px;
   font-size: 18px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
