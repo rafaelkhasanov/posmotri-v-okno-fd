@@ -208,9 +208,6 @@ html {
 .content__video-card-description-container {
   flex-grow: 1;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
 }
 
 .content__video-card-title {
@@ -223,10 +220,11 @@ html {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
-  line-height: 16.2px;
+  line-height: 16px;
   font-size: 18px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
