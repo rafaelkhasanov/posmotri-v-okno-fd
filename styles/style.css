@@ -174,7 +174,7 @@ html {
 }
 
 .content__list-container {
-  max-height: 298px;
+  height: 298px;
   max-width: 399px;
   overflow-y: auto;
   margin-top: 26px;
